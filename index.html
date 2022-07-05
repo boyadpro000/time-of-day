@@ -67,7 +67,7 @@
 	  <img id="pic" src="images/evening.jpg" alt="Time of Day Image" class="flexible" />
      <footer>
       <p><small>&copy; 2021-<span id="copyright"></span> by 
-          YOUR NAME HERE, All Rights Reserved ~ 
+          Prodan Boyadzhiev, All Rights Reserved ~ 
           <a id="html-checker" href="#">Check HTML</a> ~ 
           <a id="css-checker" href="#">Check CSS</a></small>
      </p>
@@ -118,23 +118,34 @@
 	let myColor = "";
 	let myPic = "";
 
-
+//  myHour=23
 	
+	if(myHour >=5 && myHour < 12){
 
-	//alert(myCopyright);
-	//console.log(myCopyright);
-	
-	if(myHour<12){//morning
-	//alert("Good Morning!");
-		myGreeting = "Good Morning!";
-		myColor = "orange";
-		myPic = "morning.jpg";
-	}else{//afternoon
-		myGreeting = "Good Afternoon!";
-		myColor = "green";
-		myPic = "afternoon.jpg";
-	//alert("Good Afternoon!");
+	myGreeting = "Good Morning!";
+	myColor = "goldenrod";
+	myPic = "morning.jpg";
+
+	}else if(myHour >= 12 && myHour < 18){
+
+	myGreeting = "Good Afternoon!";
+	myColor = "pink";
+	myPic = "afternoon.jpg";
+
+	}else if(myHour >= 18 && myHour < 23){
+
+	myGreeting = "Good Evening!";
+	myColor = "green";
+	myPic = "evening.jpg";
+
+	}else if(myHour >= 23){
+
+	myGreeting = "Good Night!";
+	myColor = "red";
+	myPic = "night.jpg";
+
 	}
+
 
 
 	myPic = "images/" + myPic;
